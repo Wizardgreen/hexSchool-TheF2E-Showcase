@@ -2,6 +2,7 @@
   <div class="signupAuth">
     <div class="cover">
       <div class="card" v-if="!checked">
+        <router-link to="/"><i id="close" class="fas fa-lg fa-times"/></router-link>
         <h2 class="title">The - F2E<br/>前端精神時光屋</h2>
         <h3 class="sheetName">報名查詢</h3>
         <input
@@ -24,6 +25,7 @@
 </template>
 
 <script>
+import '@/assets/js/fontawesome-all.min.js';
 import PrimaryBtn from '@/components/PrimaryBtn.vue';
 export default {
   data() {
@@ -83,6 +85,7 @@ export default {
 }
 .card{
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   margin: 5rem 0;
@@ -91,6 +94,17 @@ export default {
   height: 400px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, .8);
+  a {
+    position: absolute !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    color: #222;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #d6b161;
+    }
+  }
 }
 .title {
   margin: 3rem;

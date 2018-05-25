@@ -27,7 +27,7 @@ export default {
   background-color: #222;
   font-size: .9rem;
   letter-spacing: 3px;
-  transition: color .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .outline {
   color: #222;
