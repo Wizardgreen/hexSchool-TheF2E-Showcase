@@ -16,8 +16,8 @@
     "nth": "1",
     "title": "Todo-list",
     "route": "/week1",
-    "githubLink": "javascript: void(0)",
-    "commentLink": "javascript: void(0)",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/todoList",
+    "commentLink": "https://wizardgreen.github.io/Blog/2018/06/10/[F2E]Week-1-TodoList/",
     "needCard": true,
     "picture": "url(https://i.imgur.com/BmR3jQG.png)"
   },
