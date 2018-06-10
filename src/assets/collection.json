@@ -3,6 +3,7 @@
     "release": true,
     "nth": "0",
     "title": "F2E 報名查詢",
+    "route": "/week0",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
     "disableGit": true,
@@ -13,20 +14,21 @@
   {
     "release": true,
     "nth": "1",
-    "title": "Example",
+    "title": "Todo-list",
+    "route": "/week1",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
     "needCard": true,
-    "picture": "url(https://i.imgur.com/na1pmuz.png)"
+    "picture": "url(https://i.imgur.com/BmR3jQG.png)"
   },
   {
-    "release": true,
+    "release": false,
     "nth": "2",
     "title": "作品2",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
     "needCard": false,
-    "picture": "url('../assets/frog.png')"
+    "picture": "url()"
   },
   {
     "release": false,

@@ -2,15 +2,18 @@
   <div class="signupAuth">
     <div class="cover">
       <div class="card" v-if="!checked">
-        <router-link to="/"><i id="close" class="fas fa-lg fa-times"/></router-link>
+        <router-link to="/">
+          <i id="close" class="fas fa-lg fa-times"/>
+        </router-link>
         <h2 class="title">The - F2E<br/>前端精神時光屋</h2>
         <h3 class="sheetName">報名查詢</h3>
         <input
           id="mail"
           placeholder="exapmle@gmail.com..."
           v-model="email"
+          @keyup.enter="check(email)"
         />
-        <primaryBtn text="查詢"  :clickFunc="check.bind(this, email)"/>
+        <Button text="查詢" outward="outline" :clickFunc="check.bind(this, email)" />
       </div>
       <div class="card" v-if="checked">
         <h2 class="title">{{ response.message }}！</h2>
@@ -18,15 +21,15 @@
           <p><strong>報名稱呼：</strong>{{ response.nickName}}</p>
           <p><strong>報名時間：</strong>{{ response.timeStamp }}</p>
         </div>
-        <primaryBtn text="返回" :clickFunc="again.bind(this)"/>
+        <Button text="返回" outward="outline" :clickFunc="again.bind(this, email)" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import '@/assets/js/fontawesome-all.min.js';
-import PrimaryBtn from '@/components/PrimaryBtn.vue';
+// import '@/assets/js/fontawesome-all.min.js';
+import Button from '@/components/Button.vue';
 export default {
   data() {
     return {
@@ -48,7 +51,6 @@ export default {
         const yy = date.getFullYear()
         const mm = date.getMonth() + 1;
         const dd = date.getDate();
-        
         this.response.timeStamp = `${yy} / ${mm} / ${dd}`
         this.checked = true;
       }
@@ -59,7 +61,7 @@ export default {
     },
   },
   components: {
-    PrimaryBtn,
+    Button,
   },
 }
 </script>
@@ -130,4 +132,5 @@ export default {
     width: 60%;
   }
 }
+
 </style>

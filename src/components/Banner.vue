@@ -27,7 +27,7 @@
           <a :href="info.commentLink" target="_blank"><i class="fas fa-lg fa-comment-dots" /></a>
         </div>
       </div>
-      <router-link to="/week0">
+      <router-link :to="info.route">
         <p
           class="title"
           :class="{'show': isTitleShow}"
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import '@/assets/js/fontawesome-all.min.js';
+// import '@/assets/js/fontawesome-all.min.js';
 
 export default {
   name: 'Banner',
@@ -97,11 +97,10 @@ a {
   flex: 1;
   background-size:cover;
   background-position:center;
-  // filter: blur(2px);
-  transition: flex .7s cubic-bezier(0.8,-0.19, 0.7,-0.11), filter .7s ease-in-out;
+  // transition: flex .7s cubic-bezier(0.8,-0.19, 0.7,-0.11), filter .7s ease-in-out;
+  transition: flex .7s ease-in-out, filter .7s ease-in-out;
   &.actived {
     flex: 3;
-    // filter: blur(0);
     .week {
       transform: translateY(-100%);
     }
@@ -193,6 +192,7 @@ a {
 }
 .title {
   text-align: center;
+  border-bottom: 2px solid #d6b161;
   transform: translateY(-50%);
   opacity: 0;
   &.show {

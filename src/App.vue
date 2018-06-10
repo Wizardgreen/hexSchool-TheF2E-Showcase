@@ -7,6 +7,7 @@
 
 <script>
 import Navigation from '@/components/Navigation.vue';
+import '@/assets/js/fontawesome-all.min.js';
 
 export default {
   components: {
@@ -21,5 +22,10 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.icon {
+  display: inline-block;
 }
 </style>

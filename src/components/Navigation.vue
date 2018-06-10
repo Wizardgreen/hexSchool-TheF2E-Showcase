@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import '@/assets/js/fontawesome-all.min.js';
 export default {
   name: 'Navigation',
 }
@@ -35,7 +34,6 @@ export default {
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  > * {}
   @media (min-width: 992px) {
     width: 70%;
   }
