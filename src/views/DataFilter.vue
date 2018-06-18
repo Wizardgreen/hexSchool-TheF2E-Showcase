@@ -30,14 +30,14 @@ export default Component({
   },
 })(
   class DataFilter extends Vue {
-    get filteredData() { return this.$store.getters.filteredAgainByPages };
-    get isSearching() { return this.$store.state.isSearching };
+    get filteredData() { return this.$store.getters.filteredAgainByPages }
+    get isSearching() { return this.$store.state.isSearching }
     mounted() {
       const vm = this;
       axios
         .get('https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5')
         .then(response => vm.$store.commit(FETCH_EVENT_DATA, response.data));
-    };
+    }
   }
 );
 
@@ -80,7 +80,9 @@ export default Component({
 
 .filter {
   height: 100%;
-  background-color: #888;
+  background-image: url('https://i.imgur.com/6grdyVr.jpg');
+  background-size: cover;
+  background-position: center top;
 }
 .title, .content {
   transition: filter .3s ease-in-out;

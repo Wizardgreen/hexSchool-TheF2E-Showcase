@@ -19,14 +19,14 @@ import { CHANGE_PAGE, PREVIOUS_PAGE, NEXT_PAGE } from '@/mutation/week2Filter.js
 
 export default Component({})(
   class FilterPagination extends Vue {
-    get pages() { return this.$store.getters.pages };
-    get currentPage() { return this.$store.state.currnentPage };
+    get pages() { return this.$store.getters.pages }
+    get currentPage() { return this.$store.state.currnentPage }
     // currentPage = 1;
     chagePage(event, newPageNumber) {
       this.$store.commit(CHANGE_PAGE, newPageNumber);
-    };
-    nextPage() { this.$store.commit(NEXT_PAGE) };
-    prevPage() { this.$store.commit(PREVIOUS_PAGE) };
+    }
+    nextPage() { this.$store.commit(NEXT_PAGE) }
+    prevPage() { this.$store.commit(PREVIOUS_PAGE) }
   }
 );
 </script>

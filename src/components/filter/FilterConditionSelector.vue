@@ -66,7 +66,7 @@ export default Component({
   height: 100vh;
   justify-content: center;
   background-color: #222;
-  opacity: .8;
+  opacity: .9;
   z-index: 10;
   transform: translateX(-100%);
   transition: transform .3s ease-in-out;
@@ -91,6 +91,7 @@ export default Component({
   background-color: #fdfdfd;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  text-align: center;
   transition: border .3s ease-in-out;
   &:focus {
     outline:none;
@@ -113,7 +114,7 @@ select.input {
 }
 .btn-search {
   position: absolute;
-  bottom: 10rem;
+  bottom: 25%;
 }
 #btn-unfold {
   position: absolute;

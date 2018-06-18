@@ -33,28 +33,27 @@ export default new Vuex.Store({
 
       if (trem.eventName) {
         cache = cache.filter(data => data.title.indexOf(trem.eventName) != -1);
-      };
+      }
       if (trem.begDate) {
         cache = cache.filter(data => {
           const eventDate = new Date(data.startDate).getTime();
           const begDate = new Date(trem.begDate).getTime();
           return eventDate > begDate;
         });
-      };
+      }
       if (trem.endDate) {
         cache = cache.filter(data => {
           const eventDate = new Date(data.startDate).getTime();
           const endDate = new Date(trem.endDate).getTime();
           return eventDate < endDate;
         });
-      };
+      }
       if (trem.location) {
         cache = cache.filter(data => data.showInfo[0].location.indexOf(trem.location) != -1);
-      };
+      }
       return cache;
     },
     filteredAgainByPages: (state, getters) => {
-      // if (!getters.filteredByCondition) {return}
       const num = state.currnentPage;
       return getters.filteredByCondition.filter((item, index) => {
         return index >= (num - 1) * 10 && index < num * 10;

@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: './',
+  baseUrl: '/./',
   // configureWebpack: {
   //   entry: './src/main.ts',
   //   resolve: {

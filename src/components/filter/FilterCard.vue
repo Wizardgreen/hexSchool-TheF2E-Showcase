@@ -24,28 +24,22 @@
         .icon.link
           i.fas.fa-link
         a(:href="info.webSales") 活動連結
-      // .price
-      //   .icon.price
-      //     i.fas.fa-dollar-sign
-      //   span {{info.showInfo[0].price}}
 </template>
 
 <script>
-export default {
-  name: 'FilterCard',
-  data() {
-    return {
-      
-    }
-  },
+import Vue from 'vue';
+import Component from 'vue-class-component';
+
+export default Component({
   props: {
     info: {
       type: Object,
-      default: {},
       required: true, 
     }
   },
-}
+})(
+  class FilterCard extends Vue {}
+);
 </script>
 
 <style lang="scss" scoped>
@@ -142,13 +136,4 @@ export default {
     }
   }
 }
-// .price {
-//   display: inline-block;  
-//   margin-top: 1rem auto 0 auto;
-//   background-color: #222;
-//   .icon {
-//     margin-top: 0;
-//     color: #d6b161;
-//   }
-// }
 </style>
