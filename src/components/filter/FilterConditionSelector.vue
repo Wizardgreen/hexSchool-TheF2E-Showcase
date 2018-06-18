@@ -70,6 +70,9 @@ export default Component({
   z-index: 10;
   transform: translateX(-100%);
   transition: transform .3s ease-in-out;
+  @include break-point($desktop) {
+    width: 400px;
+  }
   &.actived {
     transform: translateX(0);
   }
