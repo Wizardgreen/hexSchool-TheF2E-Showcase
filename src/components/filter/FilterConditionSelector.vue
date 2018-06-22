@@ -10,9 +10,10 @@
         select.input.location(v-model="condition.location")
           option.option(value="" disable) --Location--
           option.option(
-            v-for="name in locationList"
-            :value="name"
-            ) {{name}}
+            v-for="(item, index) in locationList"
+            :value="item"
+            :key="index"
+            ) {{item}}
       CommenButton.btn-search(@press="searchEvent" outward='light')
         i.fas.fa-search(slot="text")
       CommenButton#btn-unfold(@press="showPanel" shape="column" size="s")
@@ -40,7 +41,7 @@ export default Component({
       endDate: '',
       location: '',
     };
-    get isSearching() { return this.$store.state.isSearching }
+    get isSearching() { return this.$store.state.week2.isSearching }
     get locationList() { return this.$store.getters.locationList }
     showPanel() { this.$store.commit(SHOW_CONDITION_PANEL) };
     hidePanel() { this.$store.commit(HIDE_CONDITION_PANEL) };

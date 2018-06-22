@@ -31,7 +31,7 @@ export default Component({
 })(
   class DataFilter extends Vue {
     get filteredData() { return this.$store.getters.filteredAgainByPages }
-    get isSearching() { return this.$store.state.isSearching }
+    get isSearching() { return this.$store.state.week2.isSearching }
     mounted() {
       const vm = this;
       axios

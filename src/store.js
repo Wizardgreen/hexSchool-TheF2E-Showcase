@@ -10,10 +10,12 @@ import {
   APPLY_SEARCH_CONDITION,
 } from './mutation/week2Filter.js';
 
+import { FETCH_TRANSACTION_LIST } from './mutation/week3AdminOrder.js';
+
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const week2 = {
   state: {
     eventData: [],
     isSearching: false,
@@ -29,8 +31,8 @@ export default new Vuex.Store({
     filteredByCondition: state => {
       const stringifyData = JSON.stringify(state.eventData);
       const trem = state.condition;
+      
       let cache = JSON.parse(stringifyData);
-
       if (trem.eventName) {
         cache = cache.filter(data => data.title.indexOf(trem.eventName) != -1);
       }
@@ -60,20 +62,22 @@ export default new Vuex.Store({
       });
     },
     locationList: state => {
-      if (!state.eventData) {return}
-      const originList = state.eventData.map(data => {
-        const str = data.showInfo[0].location;
-        return str.substr(0, 3);
-      });
-      // 過濾重複資料
-      const filtedList = new Set(originList);
-      // 再過濾掉開頭是 '[' 的資料
-      return [...filtedList].filter(data => data.substr(0, 1) != '[');
+      let list = state.eventData
+        .map(item => item.showInfo[0])  // 取出陣列中的細節資料
+        .filter(item => Boolean(item))  // 如果該資料有 undefine 就篩掉，被這裡卡了兩個晚上，氣死我
+        .map(item => {  // 如果開頭有'['，就把它移除
+          if (item.location.substr(0, 1) == '[') { return item.location.slice(1) }
+          else { return item.location; }
+        })
+        .map(item => item.substr(0, 3)); // 取出前三個字
+      const filtedList = new Set(list); 
+      // 透過 Set 的特性，來過濾重複資料，但因他是 array-like ，所以在用 ...組回array
+      return [...filtedList];
     },
     pages: (state, getters) => {
       const { length } = getters.filteredByCondition;
       return Math.ceil(length / 10);
-    }
+    },
   },
   mutations: {
     [FETCH_EVENT_DATA]: (state, payload) => state.eventData = [...payload],
@@ -85,9 +89,23 @@ export default new Vuex.Store({
     },
     [SHOW_CONDITION_PANEL]: state => state.isSearching = true,
     [HIDE_CONDITION_PANEL]: state => state.isSearching = false,
-    [APPLY_SEARCH_CONDITION]: (state, newCondition) => state.condition = {...newCondition}
+    [APPLY_SEARCH_CONDITION]: (state, newCondition) => state.condition = {...newCondition},
   },
-  actions: {
+};
 
+// const week3 = {
+//   state: {
+//     transactionList: [],
+//   },
+//   getters: {},
+//   mutations: {
+//     [FETCH_TRANSACTION_LIST]: (state, payload) => state.transactionList = [...payload],
+//   },
+//   actions: {},
+// }
+
+export default new Vuex.Store({
+  modules: {
+    week2,
   },
 });
