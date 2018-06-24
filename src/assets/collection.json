@@ -32,13 +32,14 @@
     "picture": "url(https://i.imgur.com/ZV89nm2.png)"
   },
   {
-    "release": false,
+    "release": true,
     "nth": "3",
-    "title": "作品3",
-    "githubLink": "javascript: void(0)",
-    "commentLink": "javascript: void(0)",
+    "title": "AdminOrder",
+    "route": "/week3",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/adminOrder",
+    "commentLink": "https://wizardgreen.github.io/Blog/2018/06/18/[F2E]Week-3-AdminOrder/",
     "needCard": true,
-    "picture": "url(https://source.unsplash.com/ITjiVXcwVng/1500x1500)"
+    "picture": "url(https://i.imgur.com/TSjSyt0.png)"
   },
   {
     "release": false,

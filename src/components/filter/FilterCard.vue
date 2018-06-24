@@ -44,7 +44,7 @@ export default Component({
 
 <style lang="scss" scoped>
 @import '../../assets/scss/variable.scss';
-@import '../../assets//scss/breakpoint.scss';
+@import '../../assets/scss/breakpoint.scss';
 
 .filter-card {
   margin-top: 25px;

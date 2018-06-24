@@ -9,7 +9,11 @@
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.2",
     "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
+    "element-ui": "^2.4.1",
+    "faker": "^4.1.0",
     "vue": "^2.5.16",
+    "vue-chartjs": "^3.3.2",
     "vue-loader": "^14.2.2",
     "vue-loaders": "^2.0.0",
     "vue-router": "^3.0.1",
@@ -19,6 +23,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.2",
     "@vue/cli-service": "^3.0.0-rc.2",
+    "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.7.2",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
@@ -29,6 +34,15 @@
   "babel": {
     "presets": [
       "@vue/app"
+    ],
+    "plugins": [
+      [
+        "component",
+        {
+          "libraryName": "element-ui",
+          "styleLibraryName": "theme-chalk"
+        }
+      ]
     ]
   },
   "postcss": {

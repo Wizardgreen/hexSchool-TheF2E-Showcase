@@ -10,8 +10,13 @@ import {
   APPLY_SEARCH_CONDITION,
 } from './mutation/week2Filter.js';
 
-import { FETCH_TRANSACTION_LIST } from './mutation/week3AdminOrder.js';
-
+import {
+  FETCH_TRANSACTION_LIST,
+  CHANGE_CURRENT_VIEW,
+  CHANGE_ORDERS_PAGE,
+  FETCH_BLACK_LIST,
+  REMOVE_BLACK_ONE,
+} from './mutation/week3AdminOrder.js';
 
 Vue.use(Vuex)
 
@@ -51,7 +56,11 @@ const week2 = {
         });
       }
       if (trem.location) {
-        cache = cache.filter(data => data.showInfo[0].location.indexOf(trem.location) != -1);
+        cache = cache.filter(data => {
+          if (data.showInfo[0]) { // 因為有的資料內根本沒提供相關訊息，所以 undefine 就略過
+            return data.showInfo[0].location.indexOf(trem.location) != -1;
+          }
+        });
       }
       return cache;
     },
@@ -93,19 +102,59 @@ const week2 = {
   },
 };
 
-// const week3 = {
-//   state: {
-//     transactionList: [],
-//   },
-//   getters: {},
-//   mutations: {
-//     [FETCH_TRANSACTION_LIST]: (state, payload) => state.transactionList = [...payload],
-//   },
-//   actions: {},
-// }
+const week3 = {
+  state: {
+    currentView: 'Overview',
+    currentOrdersPage: 1,
+    transactionList: [],
+    chartData: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      datasets: [
+        {
+          label: 'Vue',
+          backgroundColor: 'rgba(81, 192, 191, .6)',
+          borderColor: 'rgba(81, 192, 191)',
+          borderWidth: '1px',
+          data: [40, 20, 12, 39, 25, 40, 39, 20, 40, 20, 12, 11]
+        },
+        {
+          label: 'Angular',
+          backgroundColor: 'rgba(251, 103, 134, .6)',
+          borderColor: 'rgba(251, 103, 134)',
+          borderWidth: '1px',
+          data: [46, 28, 41, 39, 35, 64, 49, 50, 27, 30, 41, 38]
+        },
+        {
+          label: 'React',
+          backgroundColor: 'rgba(68, 164, 230, .6)',
+          borderColor: 'rgba(68, 164, 230)',
+          borderWidth: '1px',
+          data: [20, 24, 32, 29, 55, 44, 19, 16, 32, 40, 48, 31]
+        },
+      ]
+    },
+    blackList: [],
+  },
+  getters: {
+    listScopedByPage: state => {
+      const num = state.currentOrdersPage;
+      return state.transactionList.filter((data, index) => {
+        return index >= (num-1)*10 && index < (num*10)
+      })
+    }
+  },
+  mutations: {
+    [FETCH_TRANSACTION_LIST]: (state, payload) => state.transactionList = [...payload],
+    [CHANGE_CURRENT_VIEW]: (state, target) => state.currentView = target,
+    [CHANGE_ORDERS_PAGE]: (state, newPage) => state.currentOrdersPage = newPage,
+    [FETCH_BLACK_LIST]: (state, payload) => state.blackList = payload,
+    [REMOVE_BLACK_ONE]: (state, id) => state.blackList.splice(id - 1, 1), 
+  },
+}
 
 export default new Vuex.Store({
   modules: {
     week2,
+    week3,
   },
 });

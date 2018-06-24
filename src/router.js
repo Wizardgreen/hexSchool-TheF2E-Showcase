@@ -4,6 +4,7 @@ import ShowCase from '@/views/ShowCase.vue';
 import SignupAuth from '@/views/SignupAuth.vue';
 import TodoList from '@/views/TodoList.vue';
 import DataFilter from '@/views/DataFilter.vue';
+import AdminOrder from '@/views/AdminOrder.vue';
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/week2',
       name: 'DataFilter',
       component: DataFilter,
+    },
+    {
+      path: '/week3',
+      name: 'AdminOrder',
+      component: AdminOrder,
     },
   ]
 })
