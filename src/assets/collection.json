@@ -42,13 +42,14 @@
     "picture": "url(https://i.imgur.com/TSjSyt0.png)"
   },
   {
-    "release": false,
+    "release": true,
     "nth": "4",
-    "title": "作品4",
-    "githubLink": "javascript: void(0)",
-    "commentLink": "javascript: void(0)",
+    "title": "ProductGallery",
+    "route": "/week4",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/views",
+    "commentLink": "https://wizardgreen.github.io/Blog/2018/07/01/[F2E]Week-4-ProductGallery/",
     "needCard": true,
-    "picture": "url(https://image.shutterstock.com/z/stock-photo-business-people-meeting-conference-discussion-corporate-concept-430168801.jpg)"
+    "picture": "url(https://i.imgur.com/thtbyzd.png)"
   },
   {
     "release": false,

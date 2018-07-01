@@ -5,6 +5,7 @@ import SignupAuth from '@/views/SignupAuth.vue';
 import TodoList from '@/views/TodoList.vue';
 import DataFilter from '@/views/DataFilter.vue';
 import AdminOrder from '@/views/AdminOrder.vue';
+import ProductGallery from '@/views/ProductGallery.vue';
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/week3',
       name: 'AdminOrder',
       component: AdminOrder,
+    },
+    {
+      path: '/week4',
+      name: 'ProductGallery',
+      component: ProductGallery,
     },
   ]
 })
