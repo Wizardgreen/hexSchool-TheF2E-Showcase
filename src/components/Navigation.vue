@@ -2,7 +2,11 @@
   <div class="navigation">
     <div class="container">
       <div class="title">
-        <h1><span>Green</span>e's</h1>
+        <h1>
+          <router-link class="brand" to="/">
+            <span>Green</span>e's
+          </router-link>
+        </h1>
       </div>
       <ul class="links">
         <li><router-link to="/">TheF2E - Showcase</router-link></li>
@@ -74,7 +78,7 @@ a {
   &:hover {
     color: #d6b161;
   }
-  &.router-link-exact-active {
+  &.router-link-exact-active:not(.brand) {
     color: #d6b161;
     border-bottom: 1px solid  #d6b161;
   }

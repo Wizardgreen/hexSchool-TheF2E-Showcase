@@ -4,36 +4,37 @@ $tiffany-green: #50E3C2;
 $theme-black: #000;
 $theme-black-3: rgba(0, 0, 0, .3);
 $theme-black-1: rgba(0, 0, 0, .1);
+$Roboto: 'Roboto', sans-serif;
 
 @mixin title() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 72px;
   font-weight: 500;
 }
 @mixin title2() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 48px;
   font-weight: 900;
 }
 @mixin title3i() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 24px;
   font-weight: 700;
   font-style: italic;
 }
 @mixin subtitle() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 24px;
   font-weight: 900;
 }
 @mixin Paragraph() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 @mixin Logo() {
-  font-family: 'Roboto', sans-serif;
+  font-family: $Roboto;
   font-size: 20px;
   font-weight: 900;
   line-height: 24px;

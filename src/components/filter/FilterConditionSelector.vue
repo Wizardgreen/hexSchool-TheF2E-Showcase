@@ -29,7 +29,7 @@ import {
   HIDE_CONDITION_PANEL,
   APPLY_SEARCH_CONDITION,
   CHANGE_PAGE,
-} from '@/mutation/week2Filter.js';
+} from '@/store/types/week2-type.js';
 
 export default Component({
   components: { CommenButton },
@@ -115,7 +115,7 @@ select.input {
 }
 .btn-search {
   position: absolute;
-  bottom: 25%;
+  bottom: 25vh;
 }
 #btn-unfold {
   position: absolute;

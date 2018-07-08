@@ -15,7 +15,7 @@
 <script>
 import Vue from "vue";
 import Component from "vue-class-component";
-import { CHANGE_PAGE, PREVIOUS_PAGE, NEXT_PAGE } from '@/mutation/week2Filter.js';
+import { CHANGE_PAGE, PREVIOUS_PAGE, NEXT_PAGE } from '@/store/types/week2-type.js';
 
 export default Component({})(
   class FilterPagination extends Vue {

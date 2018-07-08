@@ -26,7 +26,7 @@
     "nth": "2",
     "title": "Filter",
     "route": "/week2",
-    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/fillter",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/filter",
     "commentLink": "https://wizardgreen.github.io/Blog/2018/06/18/[F2E]Week-2-Filter/",
     "needCard": true,
     "picture": "url(https://i.imgur.com/ZV89nm2.png)"
@@ -52,13 +52,14 @@
     "picture": "url(https://i.imgur.com/thtbyzd.png)"
   },
   {
-    "release": false,
+    "release": true,
     "nth": "5",
-    "title": "作品5",
-    "githubLink": "javascript: void(0)",
-    "commentLink": "javascript: void(0)",
+    "title": "ComicViewer",
+    "route": "/week5",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/comicViewer",
+    "commentLink": "https://wizardgreen.github.io/Blog/2018/07/08/[F2E]Week-5-ComicViewer/",
     "needCard": true,
-    "picture": ""
+    "picture": "url(https://i.imgur.com/FGUHOwr.png)"
   },
   {
     "release": false,

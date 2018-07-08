@@ -53,7 +53,6 @@
 </template>
 
 <script>
-// import '@/assets/js/fontawesome-all.min.js';
 
 export default {
   name: 'Banner',
@@ -97,7 +96,6 @@ a {
   flex: 1;
   background-size:cover;
   background-position:center;
-  // transition: flex .7s cubic-bezier(0.8,-0.19, 0.7,-0.11), filter .7s ease-in-out;
   transition: flex .7s ease-in-out, filter .7s ease-in-out;
   &.actived {
     flex: 3;

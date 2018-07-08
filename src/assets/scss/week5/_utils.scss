@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$primary: #FD6A29;
+$secondary: #bbb;
+$white: #fff;
+$iconBackground: #411512;
+$iconTransform: rgb(51, 170, 227);
+$backgound: 'https://i.imgur.com/E3j7gui.jpg';
+
+// font
+$font-family: 'Roboto';
+
+@mixin des($color) {
+  font-family: $font-family;
+  font-weight: 300;
+  color: $color;
+  line-height: 1.2rem;
+}
+
+@mixin title($color) {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: $font-family;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+@mixin subTitle($color) {
+  font-family: $font-family;
+  font-size: 1rem;
+  color: $color;
+  letter-spacing: 1px;
+}
+%icon {
+  color: $primary;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+  transition: all .3s ease-in-out;
+  border-radius: 50%;
+  background-color: $iconBackground;
+}
+// glassify
+%glassify {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .4);
+  &::before {
+    content: '';
+    margin: -30px;
+    position: absolute;
+    filter: blur(20px);
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    @extend %glassifyBackgroundSetting;
+  }
+}
+%glassifyBackgroundSetting {
+  background:  linear-gradient(
+    rgba(0, 0, 0, 0.25), 
+    rgba(0, 0, 0, 0.25)
+  ), url($backgound);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+// break-point
+$landscape: 576px;
+$table: 768px;
+$desktop: 992px;
+$large-desktop: 1200px;
+
+@mixin break-point($device) {
+  @media (min-width: $device) { @content; }
+}

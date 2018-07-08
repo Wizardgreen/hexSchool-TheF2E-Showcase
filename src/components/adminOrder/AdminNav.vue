@@ -12,7 +12,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Menu, MenuItem, MenuItemGroup } from 'element-ui';
-import { CHANGE_CURRENT_VIEW } from '@/mutation/week3AdminOrder.js';
+import { CHANGE_CURRENT_VIEW } from '@/store/types/week3-type.js';
 
 export default Component({
   components: {
