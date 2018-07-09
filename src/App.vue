@@ -1,16 +1,15 @@
-<template>
-  <div id="app">
-    <Navigation />
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app
+    TheHeading
+    router-view
 </template>
 
 <script>
-import Navigation from '@/components/Navigation.vue';
+import TheHeading from '@/components/TheHeading.vue';
 
 export default {
   components: {
-    Navigation,
+    TheHeading,
   },
 }
 </script>
