@@ -7,7 +7,6 @@
 
 <script>
 import Navigation from '@/components/Navigation.vue';
-import '@/assets/js/fontawesome-all.min.js';
 
 export default {
   components: {

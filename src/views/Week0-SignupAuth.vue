@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// import '@/assets/js/fontawesome-all.min.js';
 import Button from '@/components/Button.vue';
 export default {
   data() {
