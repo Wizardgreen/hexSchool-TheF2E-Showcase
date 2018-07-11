@@ -55,7 +55,7 @@ export default Component({
   height: 100vh;
   margin: 0 !important;
   padding: .3rem;
-  top: 89.38px;
+  top: 80px;
   right: 0;
   position: absolute;
   background: #F4F4F4;

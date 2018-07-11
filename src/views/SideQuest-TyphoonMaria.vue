@@ -44,6 +44,7 @@ export default Component({
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/common/_break-point.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 .typhoon-watcher {
@@ -58,5 +59,8 @@ export default Component({
   font-weight: normal !important;
   font-family: 'Roboto';
   letter-spacing: 5px;
+  > h1 {
+    font-size: 1.5rem;
+  }
 }
 </style>
