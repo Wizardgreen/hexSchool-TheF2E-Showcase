@@ -14,7 +14,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Pagination } from 'element-ui';
-import { CHANGE_ORDERS_PAGE } from '@/store/types/week3-type.js';
+import { CHANGE_ORDERS_PAGE } from '@/store/mutation-types/week3-types.js';
 
 export default Component({
   components: { 'el-pagination': Pagination }

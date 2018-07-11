@@ -15,7 +15,7 @@ import AdminNav from '@/components/adminOrder/AdminNav.vue';
 import Overview from '@/components/adminOrder/Overview/index.vue';
 import Orders from '@/components/adminOrder/Orders/index.vue';
 import BlackList from '@/components/adminOrder/BlackList/index.vue';
-import { FETCH_TRANSACTION_LIST, FETCH_BLACK_LIST } from '@/store/types/week3-type.js';
+import { FETCH_TRANSACTION_LIST, FETCH_BLACK_LIST } from '@/store/mutation-types/week3-types.js';
 import { fakeTransaction, fakeBlackList } from '@/assets/js/fakeData.js';
 
 export default Component({

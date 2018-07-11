@@ -29,7 +29,7 @@ import {
   HIDE_CONDITION_PANEL,
   APPLY_SEARCH_CONDITION,
   CHANGE_PAGE,
-} from '@/store/types/week2-type.js';
+} from '@/store/mutation-types/week2-types.js';
 
 export default Component({
   components: { CommenButton },

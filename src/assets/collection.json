@@ -1,7 +1,7 @@
 [
   {
     "release": true,
-    "nth": "0",
+    "nth": "Week 0",
     "title": "F2E 報名查詢",
     "route": "/week0",
     "githubLink": "javascript: void(0)",
@@ -13,7 +13,7 @@
   },
   {
     "release": true,
-    "nth": "1",
+    "nth": "Week 1",
     "title": "Todo-list",
     "route": "/week1",
     "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/todoList",
@@ -23,7 +23,7 @@
   },
   {
     "release": true,
-    "nth": "2",
+    "nth": "Week 2",
     "title": "Filter",
     "route": "/week2",
     "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/filter",
@@ -33,7 +33,7 @@
   },
   {
     "release": true,
-    "nth": "3",
+    "nth": "Week 3",
     "title": "AdminOrder",
     "route": "/week3",
     "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/adminOrder",
@@ -43,7 +43,7 @@
   },
   {
     "release": true,
-    "nth": "4",
+    "nth": "Week 4",
     "title": "ProductGallery",
     "route": "/week4",
     "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/views",
@@ -53,17 +53,29 @@
   },
   {
     "release": true,
-    "nth": "5",
+    "nth": "Week 5",
     "title": "ComicViewer",
     "route": "/week5",
-    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/comicViewer",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/week5",
     "commentLink": "https://wizardgreen.github.io/Blog/2018/07/08/[F2E]Week-5-ComicViewer/",
     "needCard": true,
     "picture": "url(https://i.imgur.com/FGUHOwr.png)"
   },
   {
+    "release": true,
+    "nth": "Side Quest",
+    "title": "Typhoon-Maria",
+    "route": "/sidequest",
+    "githubLink": "javascript: void(0)",
+    "commentLink": "javascript: void(0)",
+    "disableGit": true,
+    "disableCom": true,
+    "needCard": true,
+    "picture": "url(https://i.imgur.com/Cbw6yWR.png)"
+  },
+  {
     "release": false,
-    "nth": "6",
+    "nth": "Week 6",
     "title": "作品6",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
@@ -72,7 +84,7 @@
   },
   {
     "release": false,
-    "nth": "7",
+    "nth": "Week 7",
     "title": "作品7",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
@@ -81,7 +93,7 @@
   },
   {
     "release": false,
-    "nth": "8",
+    "nth": "Week 8",
     "title": "作品8",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",
@@ -90,7 +102,7 @@
   },
   {
     "release": false,
-    "nth": "9",
+    "nth": "Week 9",
     "title": "作品9",
     "githubLink": "javascript: void(0)",
     "commentLink": "javascript: void(0)",

@@ -1,13 +1,4 @@
-import * as types from '@/store/types/week2-type.js';
-// import {
-//   FETCH_EVENT_DATA,
-//   CHANGE_PAGE,
-//   PREVIOUS_PAGE,
-//   NEXT_PAGE,
-//   SHOW_CONDITION_PANEL,
-//   HIDE_CONDITION_PANEL,
-//   APPLY_SEARCH_CONDITION,
-// } from '@/store/types/week2-type.js';
+import * as types from '@/store/mutation-types/week2-types.js';
 
 const state = {
   eventData: [],

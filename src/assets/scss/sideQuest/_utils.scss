@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$text-listTitle: #ACB2BA;
+$text-location: #48A840;
+$text-event: #126FB5;
+$text: #5C6272;
+$fz: 'roboto';
+
+%font {
+  font-size: 1rem;
+  font-family: $fz;
+}
+@mixin text($color) {
+  @extend %font;
+  color: $color;
+}
+@mixin title{
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: $fz;
+  color: $text;
+}

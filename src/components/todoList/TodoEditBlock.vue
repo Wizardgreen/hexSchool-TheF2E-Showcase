@@ -7,8 +7,16 @@
         i.far.fa-calendar-alt.fa-sm
         span Deadline
       .row
-        input.date(v-model="cache.deadLine[0]" type="text" placeholder="yyyy/mm/dd")
-        input.min(v-model="cache.deadLine[1]" type="text" placeholder="hh:mm")
+        input.date(
+          v-model="cache.deadLine[0]"
+          type="text"
+          placeholder="yyyy/mm/dd"
+        )
+        input.min(
+          v-model="cache.deadLine[1]"
+          type="text"
+          placeholder="hh:mm"
+        )
     .section.file
       .sub-title
         i.far.fa-file.fa-sm
@@ -19,12 +27,15 @@
       .sub-title
         i.far.fa-comment.fa-sm
         span Comment
-      textarea.memo(v-model="cache.comment" placeholder="Type your memo here...")
+      textarea.memo(
+        v-model="cache.comment"
+        placeholder="Type your memo here..."
+      )
   ButtonGroup(
     :mode="mode"
     @clickRedBtn="closeEditBlock"
     @clickBlueBtn="modifyList"
-    )
+  )
 </template>
 
 <script>

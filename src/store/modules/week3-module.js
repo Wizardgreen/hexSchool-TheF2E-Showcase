@@ -1,11 +1,4 @@
-import * as types from '@/store/types/week3-type.js';
-// import {
-//   FETCH_TRANSACTION_LIST,
-//   CHANGE_CURRENT_VIEW,
-//   CHANGE_ORDERS_PAGE,
-//   FETCH_BLACK_LIST,
-//   REMOVE_BLACK_ONE,
-// } from '@/store/types/week3-type.js';
+import * as types from '@/store/mutation-types/week3-types.js';
 
 const state = {
   currentView: 'Overview',

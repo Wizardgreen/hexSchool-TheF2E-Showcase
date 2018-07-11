@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import week2 from '@/store/modules/week2-module.js';
 import week3 from '@/store/modules/week3-module.js';
 import week5 from '@/store/modules/week5-module.js';
+import sideQuest from '@/store/modules/sideQuest-module.js';
 
 Vue.use(Vuex)
 
@@ -11,5 +12,6 @@ export default new Vuex.Store({
     week2,
     week3,
     week5,
+    sideQuest,
   },
 });

@@ -9,9 +9,9 @@
 <script>
 import Vue from 'vue';
 import Component from 'vue-class-component';
-import VolumePage from '@/components/comicViewer/VolumePage/';
-import ViewPage from '@/components/comicViewer/ViewPage/';
-import { FETCH_COMIC_DATA } from '@/store/types/week5-type.js';
+import VolumePage from '@/components/week5/VolumePage/';
+import ViewPage from '@/components/week5/ViewPage/';
+import { FETCH_COMIC_DATA } from '@/store/mutation-types/week5-types.js';
 
 export default Component({
   components: {

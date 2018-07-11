@@ -17,7 +17,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import axios from 'axios';
-import { FETCH_EVENT_DATA } from '@/store/types/week2-type.js';
+import { FETCH_EVENT_DATA } from '@/store/mutation-types/week2-types.js';
 import FilterConditionSelector from '@/components/filter/FilterConditionSelector.vue';
 import FilterCard from '@/components/filter/FilterCard.vue';
 import FilterPagination from '@/components/filter/FilterPagination.vue';

@@ -20,7 +20,7 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Table, Button } from 'element-ui';
-import { REMOVE_BLACK_ONE } from '@/store/types/week3-type.js';
+import { REMOVE_BLACK_ONE } from '@/store/mutation-types/week3-types.js';
 
 export default Component({
   components: {

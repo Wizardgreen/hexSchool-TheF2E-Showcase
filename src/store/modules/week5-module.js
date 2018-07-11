@@ -1,4 +1,4 @@
-import * as types from '@/store/types/week5-type.js';
+import * as types from '@/store/mutation-types/week5-types.js';
 
 const state = {
   comicData: {},

@@ -76,7 +76,7 @@ export default Component({})(
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/scss/week4only.scss';
+@import '../assets/scss/week4/_utils.scss';
 @mixin round($type, $sec, $point) {
   animation: $type infinite linear $sec;
   transform-origin: $point;

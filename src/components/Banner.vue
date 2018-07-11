@@ -21,7 +21,6 @@
         <div class="link github" :class="{'flipIn': isLinksFlipIn}" v-if="!info.disableGit">
           <a :href="info.githubLink" target="_blank"><i class="fab fa-lg fa-github" /></a>
         </div>
-        Week 
         <span class="nth">{{ info.nth }}</span>
         <div class="link comment" :class="{'flipIn': isLinksFlipIn}" v-if="!info.disableCom">
           <a :href="info.commentLink" target="_blank"><i class="fas fa-lg fa-comment-dots" /></a>
@@ -41,7 +40,6 @@
         class="week"
         @transitionend.self="handleTitleFade"
         >
-        Week 
         <span class="nth">{{ info.nth }}</span>
       </div>
       <div class="title" :class="{'show': isTitleShow}">
