@@ -74,13 +74,14 @@
     "picture": "url(https://i.imgur.com/Cbw6yWR.png)"
   },
   {
-    "release": false,
+    "release": true,
     "nth": "Week 6",
-    "title": "作品6",
-    "githubLink": "javascript: void(0)",
-    "commentLink": "javascript: void(0)",
-    "needCard": false,
-    "picture": "#222"
+    "title": "Validation",
+    "route": "/week6",
+    "githubLink": "https://github.com/Wizardgreen/hexSchool-TheF2E-Showcase/tree/master/src/components/week6",
+    "commentLink": "https://wizardgreen.github.io/Blog/2018/07/16/[F2E]Week-6-Validation/",
+    "needCard": true,
+    "picture": "url(https://i.imgur.com/MJOqBLU.png)"
   },
   {
     "release": false,

@@ -8,6 +8,7 @@ import AdminOrder from '@/views/Week3-AdminOrder.vue';
 import ProductGallery from '@/views/Week4-ProductGallery.vue';
 import ComicViewer from '@/views/Week5-ComicViewer.vue';
 import TyphoonMaria from '@/views/SideQuest-TyphoonMaria.vue';
+import Validation from '@/views/Week6-Validation.vue';
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/sidequest',
       name: 'TyphoonMaria',
       component: TyphoonMaria,
+    },
+    {
+      path: '/week6',
+      name: 'Validation',
+      component: Validation,
     },
   ]
 })

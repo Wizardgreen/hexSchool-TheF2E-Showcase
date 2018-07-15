@@ -1,0 +1,41 @@
+@import '../common/_break-point.scss';
+@import '../common/_variable.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$radius: 35px;
+$fz: 'roboto';
+
+
+@mixin title($color) {
+  font-weight: 300;
+  font-size: 2rem;
+  font-family: $fz;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+%input-base {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: $fz;
+
+}
+@mixin label($color) {
+  @extend %input-base;
+  color: $color;
+  text-transform: capitalize;
+}
+
+@mixin input($color) {
+  @extend %input-base;
+  color: $color;
+  line-height: 24px;
+}
+
+@mixin label-des{
+  @extend %input-base;
+  font-size: 16px;
+  font-weight: 300;
+  color: #aaa;
+}

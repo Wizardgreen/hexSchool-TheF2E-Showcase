@@ -14,7 +14,7 @@ $fz: 'roboto';
   @extend %font;
   color: $color;
 }
-@mixin title{
+@mixin title {
   font-size: 1.2rem;
   font-weight: 400;
   font-family: $fz;
