@@ -9,6 +9,7 @@ import ProductGallery from '@/views/Week4-ProductGallery.vue';
 import ComicViewer from '@/views/Week5-ComicViewer.vue';
 import TyphoonMaria from '@/views/SideQuest-TyphoonMaria.vue';
 import Validation from '@/views/Week6-Validation.vue';
+import RadioDefense from '@/views/Week7-RadioDefense.vue';
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/week6',
       name: 'Validation',
       component: Validation,
+    },
+    {
+      path: '/week7',
+      name: 'RadioDefense',
+      component: RadioDefense,
     },
   ]
 })

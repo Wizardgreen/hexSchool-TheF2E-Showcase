@@ -16,7 +16,7 @@ export default Component({
   }
 })(
   class Validation extends Vue {}
-)
+);
 </script>
 
 <style lang="scss" scoped>
