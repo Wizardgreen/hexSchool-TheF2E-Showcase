@@ -10,6 +10,7 @@ import ComicViewer from '@/views/Week5-ComicViewer.vue';
 import TyphoonMaria from '@/views/SideQuest-TyphoonMaria.vue';
 import Validation from '@/views/Week6-Validation.vue';
 import RadioDefense from '@/views/Week7-RadioDefense.vue';
+import ParallaxScrolling from '@/views/Week8-ParallaxScrolling.vue';
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/week7',
       name: 'RadioDefense',
       component: RadioDefense,
+    },
+    {
+      path: '/week8',
+      name: 'ParallaxScrolling',
+      component: ParallaxScrolling,
     },
   ]
 })

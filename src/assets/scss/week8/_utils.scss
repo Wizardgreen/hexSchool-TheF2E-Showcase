@@ -1,0 +1,26 @@
+@import '../common/_variable.scss';
+@import '../common/_utils.scss';
+
+%center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin star-top {
+  width: 365px;
+  border-top: 135px solid $secondary-yellow;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  position: relative;
+}
+@mixin star-before {
+  content: '';
+  position: absolute;
+  top: -195px;
+  left: calc(50% - 40px);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 60px solid $secondary-yellow;
+}

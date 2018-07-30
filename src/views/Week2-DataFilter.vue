@@ -37,7 +37,7 @@ export default Component({
       axios
         .get('https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=5')
         .then(response => vm.$store.commit(FETCH_EVENT_DATA, response.data));
-    }
+    };
   }
 );
 </script>

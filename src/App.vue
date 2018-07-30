@@ -24,6 +24,10 @@ export default {
   text-decoration: none;
   list-style: none;
 }
+body {
+  position: relative;
+  z-index: -10;
+}
 .icon {
   display: inline-block;
 }
