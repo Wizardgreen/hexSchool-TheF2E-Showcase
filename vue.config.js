@@ -11,7 +11,6 @@
 //     }
 //   }
 // }
-// https://wizardgreen.github.io/hexSchool-TheF2E-Showcase/#/
 module.exports = {
   baseUrl: '/hexSchool-TheF2E-Showcase/'
 }

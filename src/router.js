@@ -11,6 +11,7 @@ import TyphoonMaria from '@/views/SideQuest-TyphoonMaria.vue';
 import Validation from '@/views/Week6-Validation.vue';
 import RadioDefense from '@/views/Week7-RadioDefense.vue';
 import ParallaxScrolling from '@/views/Week8-ParallaxScrolling.vue';
+import SkillTree from '@/views/Week9-SkillTree.vue';
 
 Vue.use(Router)
 
@@ -70,6 +71,11 @@ export default new Router({
       path: '/week8',
       name: 'ParallaxScrolling',
       component: ParallaxScrolling,
+    },
+    {
+      path: '/week9',
+      name: 'SkillTree',
+      component: SkillTree,
     },
   ]
 })

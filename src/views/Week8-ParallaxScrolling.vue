@@ -22,5 +22,3 @@ export default Component({
   }
 );
 </script>
-
-<style lang="scss" scoped>
