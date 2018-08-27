@@ -61,6 +61,7 @@ export default Component({})(
   text-align: center;
   line-height: 1.8rem;
   transition: all 0.15s ease-in-out;
+  cursor: pointer;
   &:first-child {
     border-radius: 5px 0 0 5px;
   }

@@ -14,7 +14,8 @@
 </template>
 
 <script>
-import { Vue, Component } from 'vue-property-decorator';
+import Vue from "vue";
+import Component from "vue-class-component";
 import { CHANGE_CURRENT_VIEW, CHANGE_CURRENT_ISSUE } from '@/store/mutation-types/week5-types.js'
 
 export default Component({

@@ -32,7 +32,6 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^6.0.6",
-    "vue-property-decorator": "7.0.0",
     "vue-class-component": "^6.2.0",
     "vue-template-compiler": "^2.5.13"
   },
