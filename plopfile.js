@@ -1,5 +1,4 @@
 module.exports = function (plop) {
-	// controller generator
 	plop.setGenerator('component', {
 		description: 'add new component',
 		prompts: [{
