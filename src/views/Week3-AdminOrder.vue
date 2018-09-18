@@ -11,10 +11,10 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { Container, Header, Main } from 'element-ui';
-import AdminNav from '@/components/adminOrder/AdminNav.vue';
-import Overview from '@/components/adminOrder/Overview/index.vue';
-import Orders from '@/components/adminOrder/Orders/index.vue';
-import BlackList from '@/components/adminOrder/BlackList/index.vue';
+import AdminNav from '@/components/week3/AdminNav.vue';
+import Overview from '@/components/week3/Overview/index.vue';
+import Orders from '@/components/week3/Orders/index.vue';
+import BlackList from '@/components/week3/BlackList/index.vue';
 import { FETCH_TRANSACTION_LIST, FETCH_BLACK_LIST } from '@/store/mutation-types/week3-types.js';
 import { fakeTransaction, fakeBlackList } from '@/assets/js/fakeData.js';
 

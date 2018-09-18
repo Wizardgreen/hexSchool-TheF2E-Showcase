@@ -23,9 +23,9 @@
 
 <script>
 import draggable from 'vuedraggable';
-import FilterNav from '../components/todoList/FilterNav.vue';
-import TaskInput from '../components/todoList/TaskInput.vue';
-import TodoItem from '../components/todoList/TodoItem.vue';
+import FilterNav from '../components/week1/FilterNav.vue';
+import TaskInput from '../components/week1/TaskInput.vue';
+import TodoItem from '../components/week1/TodoItem.vue';
 
 export default {
   name: 'TodoList',

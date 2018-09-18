@@ -77,10 +77,5 @@ export default new Router({
       name: 'SkillTree',
       component: () => import('@/views/Week9-SkillTree.vue'),
     },
-    {
-      path: '*',
-      name: 'ShowCase',
-      component: ShowCase,
-    },
   ]
 })

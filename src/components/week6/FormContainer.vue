@@ -12,7 +12,6 @@
       @failed="decreseCounter"
       v-bind="field"
     )
-    
     .progress-container
       transition(name="el-zoom-in-center")
         .complete-button(v-if="progressBarStatus == 'success'")
@@ -71,7 +70,7 @@ export default Component({
       const inputNum = this.steps[this.currentStep].length;
       let success = 0;
       let notRequire = 0;
-      
+
       // 計算通過的數量
       this.counter.forEach(item => {
         if (item) { success += 1; }
