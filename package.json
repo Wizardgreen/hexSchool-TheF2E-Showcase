@@ -29,10 +29,9 @@
     "@vue/cli-service": "^3.0.0-rc.2",
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.7.2",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0",
     "sass-loader": "^6.0.6",
     "vue-class-component": "^6.2.0",
+    "vue-cli-plugin-pug": "^1.0.7",
     "vue-template-compiler": "^2.5.13"
   },
   "babel": {
