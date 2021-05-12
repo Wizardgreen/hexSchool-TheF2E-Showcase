@@ -9,7 +9,7 @@
   "dependencies": {
     "@vue/cli": "^3.0.0-rc.2",
     "axios": "^0.18.0",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "element-ui": "^2.4.1",
     "faker": "^4.1.0",
     "gsap": "^2.0.1",
